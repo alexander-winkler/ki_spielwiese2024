@@ -3,6 +3,7 @@
 # Alexander Winkler, winkler@zib.de
 # 6. Juli 2024
 
+import requests
 
 # Bild-URL zu einer ObjektID:
 def imgFromObjID(objID, instance = "berlin"):
@@ -24,7 +25,6 @@ def imgFromObjID(objID, instance = "berlin"):
 # Zufallsbild von Museum-Digital laden
 def randomImageUrl(instance = "berlin") -> list:
     from random import randint
-    import requests
     url = f"https://{instance}.museum-digital.de/json/objects?&s="
     res = requests.get(url)
     total = res.json()[0]["total"]
