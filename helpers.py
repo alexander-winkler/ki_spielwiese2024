@@ -29,7 +29,7 @@ def randomImageUrl(instance = "berlin") -> list:
     res = requests.get(url)
     total = res.json()[0]["total"]
     rand_objID = randint(1, int(total))    
-    imgUrls = imgFromObjID(rand_objID, instance):
+    imgUrls = imgFromObjID(rand_objID, instance)
     return imgUrls
 
 # Liste von Objekt-IDs einer Collection auf Museum-Digital
