@@ -6,3 +6,6 @@ Es enthält im Einzelnen:
 
 * `helpers.py` mit ein paar Funktionen, die die ein oder andere Nebensächlichkeit etwas leichter machen.
 
+
+## KI in der musealen Erschließung
+
